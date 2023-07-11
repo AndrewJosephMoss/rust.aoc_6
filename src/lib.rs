@@ -31,4 +31,27 @@ mod tests {
         let result = process_part_1(&input, 4).unwrap();
         assert_eq!(result, 11);
     }
+
+    #[test]
+    fn test_process_part_2() {
+        let input = "mjqjpqmgbljsphdztnvjfqwrcgsmlb";
+        let result = process_part_1(&input, 14).unwrap();
+        assert_eq!(result, 19);
+
+        let input = "bvwbjplbgvbhsrlpgdmjqwftvncz";
+        let result = process_part_1(&input, 14).unwrap();
+        assert_eq!(result, 23);
+
+        let input = "nppdvjthqldpwncqszvftbrmjlhg";
+        let result = process_part_1(&input, 14).unwrap();
+        assert_eq!(result, 23);
+
+        let input = "nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg";
+        let result = process_part_1(&input, 14).unwrap();
+        assert_eq!(result, 29);
+
+        let input = "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw";
+        let result = process_part_1(&input, 14).unwrap();
+        assert_eq!(result, 26);
+    }
 }
